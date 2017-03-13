@@ -22,12 +22,19 @@ var geojsonPoint = Terraformer.ArcGIS.parse({
   }
 });
 
+//display results in terminal or console using 
+console.log(geojsonPoint)
+
 // convert a GeoJSON object into an ArcGIS geometry
 var arcgisPoint = Terraformer.ArcGIS.convert({
   "type": "Point",
   "coordinates": [45.5165, -122.6764]
 });
+
+//display results in terminal or console using 
+console.log(arcgisPoint)
 ```
+
 
 ### Using in the Browser
 
